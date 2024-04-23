@@ -29,9 +29,9 @@ plt.show() # show the graph
 
 
 # b
-xlist2 = np.linspace(.8, 1.2, 20)
-plt.plot(xlist2, [fourier(i) for i in xlist2])
-plt.xlabel('X')
-plt.ylabel('Fourier Expansion')
-plt.title('Gibbs Phenomenon')
+xlist2 = np.linspace(.8, 1.2, 20) #https://numpy.org/doc/stable/reference/generated/numpy.linspace.html
+plt.plot(xlist2, [fourier(i) for i in xlist2]) 
+plt.xlabel('X') #https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlabel.html
+plt.ylabel('Fourier Expansion') #https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ylabel.html
+plt.title('Gibbs Phenomenon') #https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.title.html
 plt.show()
