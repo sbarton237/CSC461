@@ -9,10 +9,10 @@ arr = np.loadtxt('Phase 2\\blast-data.txt', skiprows=1)
 c = 1
 pair = 1.25
 
-y = np.array(arr[0])
-x = np.empty(0)
+y = np.array(arr[0]) #https://numpy.org/doc/stable/reference/generated/numpy.array.html
+x = np.empty(0) #https://numpy.org/doc/stable/reference/generated/numpy.empty.html
 for el in arr[1]:
-    x = np.append(x, c * (pair ** -1/5) * (el ** 2/5))
+    x = np.append(x, c * (pair ** -1/5) * (el ** 2/5)) #https://numpy.org/doc/stable/reference/generated/numpy.append.html
 
 plt.plot(x ** 1/5, y)
 plt.show()
